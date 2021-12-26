@@ -21,7 +21,7 @@ __config() -> {
 __command() -> null;
 
 global_uuid = null;
-global_forbidden = {}; // item_name -> pickup_limit
+global_forbidden = {redstone_block -> 13}; // item_name -> pickup_limit
 
 __on_player_connects(player) -> (
 	_init();
